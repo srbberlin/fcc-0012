@@ -1,5 +1,5 @@
 # fcc-0012
-Camper Leaderboard
+FreeCodeCamp: Camper Leaderboard
 
 Packages:
 
