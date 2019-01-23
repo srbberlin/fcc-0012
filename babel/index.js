@@ -115,7 +115,7 @@ class Root extends React.Component {
     this.state = {
       apiRecent: 'https://api.npoint.io/df4d86c7cd7b69ad3603',
       apiAlltime: 'https://api.npoint.io/b56606bb3536eb445851',
-      //api: 'https://fcctop100.herokuapp.com/api/fccusers/top/',
+      api: 'https://fcctop100.herokuapp.com/api/fccusers/top/',
       which: 'recent',
       down: true,
       key: 'number',
@@ -126,7 +126,6 @@ class Root extends React.Component {
 
   getData (which) {
     $.ajax({
-      //url: this.state.api + which,
       url: which ==='recent' ? this.state.apiRecent : this.state.apiAlltime,
       dataType: 'json', 
       cache: false,
