@@ -104,6 +104,7 @@ class Table extends React.Component {
   }
 }
 
+//api: 'https://fcctop100.herokuapp.com/api/fccusers/top/',
 class Root extends React.Component {
   constructor (props) {
     super(props);
@@ -115,7 +116,6 @@ class Root extends React.Component {
     this.state = {
       apiRecent: 'https://api.npoint.io/df4d86c7cd7b69ad3603',
       apiAlltime: 'https://api.npoint.io/b56606bb3536eb445851',
-      api: 'https://fcctop100.herokuapp.com/api/fccusers/top/',
       which: 'recent',
       down: true,
       key: 'number',
@@ -210,7 +210,8 @@ class Root extends React.Component {
   }
 }
 
+//<Root urlBase="https://fcctop100.herokuapp.com/api/fccusers/"/>,
 ReactDOM.render(
-  <Root  urlBase="https://fcctop100.herokuapp.com/api/fccusers/"/>,
+  <Root />,
   document.getElementById('root')
 );
